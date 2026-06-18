@@ -1,11 +1,3 @@
-/* styles.css
-   Versão reorganizada e acessível para AGRINHO 2026
-   - Compatível com funcionamento sem JavaScript (menu por checkbox)
-   - Vídeo responsivo via wrapper
-   - Fallback visual para canvases (gráficos) quando não houver JS
-   - Boas práticas de foco/contraste e redução de movimento
-*/
-
 :root{
   --bg: #f7f9f6;
   --card: #ffffff;
