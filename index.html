@@ -1,4 +1,4 @@
-    <!doctype html>
+  <!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
@@ -6,157 +6,143 @@
   <title>Agro Forte, Futuro Sustentável</title>
   <link rel="stylesheet" href="styles.css" />
   <meta name="description" content="Agro Forte, Futuro Sustentável: equilíbrio entre produção e meio ambiente." />
-  <!-- Chart.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body class="no-js">
-  <header class="site-header">
-    <div class="container header-inner">
-      <h1 class="logo">Agro Forte</h1>
 
-      <!-- CSS-only persistent toggle: hidden checkbox + label as button -->
-      <input id="nav-toggle-checkbox" class="nav-toggle-checkbox" type="checkbox" aria-hidden="true" />
-      <label for="nav-toggle-checkbox" class="nav-toggle" aria-label="Abrir menu">&#9776;</label>
+<header class="site-header">
+  <div class="container header-inner">
+    <h1 class="logo">Agro Forte</h1>
 
-      <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
-        <ul>
-          <li><a href="#sobre">Agricultura Sustentável</a></li>
-          <li><a href="#tecnologias">Tecnologias</a></li>
-          <li><a href="#preservacao">Preservação</a></li>
-          <li><a href="#graficos">Gráficos</a></li>
-          <li><a href="#video">Vídeo</a></li>
-          <li><a href="#quiz">Quiz</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <input id="nav-toggle-checkbox" class="nav-toggle-checkbox" type="checkbox" aria-hidden="true" />
+    <label for="nav-toggle-checkbox" class="nav-toggle" aria-label="Abrir menu">&#9776;</label>
 
-  <main>
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="container hero-inner">
-        <h2 id="hero-title">Agro Forte, Futuro Sustentável</h2>
-        <p>Equilíbrio entre produção e meio ambiente — práticas que garantem alimentos, renda e conservação.</p>
-      </div>
-    </section>
-
-    <section class="container content-section" id="sobre">
-      <h3>Agricultura Sustentável</h3>
-      <p>
-        A agricultura sustentável integra técnicas de produção que mantém a produtividade ao mesmo tempo
-        em que conserva solo, água e biodiversidade. Rotação de culturas, plantio direto, uso racional de
-        fertilizantes e integração lavoura-pecuária-floresta são exemplos que geram resiliência e renda.
-      </p>
+    <nav id="main-nav" class="main-nav">
       <ul>
-        <li>Conservação do solo</li>
-        <li>Gestão eficiente de água</li>
-        <li>Rotação e diversificação de culturas</li>
-        <li>Produção com baixo impacto químico</li>
+        <li><a href="#sobre">Agricultura Sustentável</a></li>
+        <li><a href="#tecnologias">Tecnologias</a></li>
+        <li><a href="#preservacao">Preservação</a></li>
+        <li><a href="#graficos">Gráficos</a></li>
+        <li><a href="#video">Vídeo</a></li>
+        <li><a href="#quiz">Quiz</a></li>
       </ul>
-    </section>
+    </nav>
+  </div>
+</header>
 
-    <section class="container content-section" id="tecnologias">
-      <h3>Tecnologias Agrícolas</h3>
-      <p>As tecnologias ajudam a aumentar a eficiência e reduzir impactos:</p>
-      <div class="grid">
-        <article>
-          <h4>Precision Farming</h4>
-          <p>Sensoriamento, GPS e dados por hectare para otimizar insumos.</p>
-        </article>
-        <article>
-          <h4>Drones e Sensoriamento</h4>
-          <p>Mapeamento de saúde das plantas, aplicação localizada e monitoramento.</p>
-        </article>
-        <article>
-          <h4>Biotecnologia</h4>
-          <p>Variedades resistentes, métodos de controle biológico e melhoria genética responsável.</p>
-        </article>
-        <article>
-          <h4>Agroecologia</h4>
-          <p>Integração de saberes tradicionais e ciência para sistemas regenerativos.</p>
-        </article>
-      </div>
-    </section>
+<main>
 
-    <section class="container content-section" id="preservacao">
-      <h3>Preservação Ambiental</h3>
-      <p>
-        Preservar biomas, recuperar áreas degradadas, manter corredores ecológicos e favorecer a biodiversidade são ações essenciais.
-      </p>
-      <ol>
-        <li>Restauração de matas ciliares</li>
-        <li>Proteção de áreas de nascentes</li>
-        <li>Políticas de conservação e incentivos</li>
-      </ol>
-    </section>
-
-    <section class="container content-section" id="graficos" aria-labelledby="graficos-title">
-      <h3 id="graficos-title">Gráficos</h3>
-      <p>Visão rápida da relação entre produção e indicadores ambientais (dados fictícios de exemplo).</p>
-      <div class="charts">
-        <div class="chart-card">
-          <h4>Produção vs Uso de Água (Índice)</h4>
-          <canvas id="chart1" role="img" aria-label="Gráfico de Produção versus Uso de Água"></canvas>
-          <div class="fallback">Gráfico não disponível — habilite JavaScript para ver a visualização.</div>
-        </div>
-        <div class="chart-card">
-          <h4>Área Conservada vs Área Produtiva (%)</h4>
-          <canvas id="chart2" role="img" aria-label="Gráfico de Área Conservada versus Área Produtiva"></canvas>
-          <div class="fallback">Gráfico não disponível — habilite JavaScript para ver a visualização.</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container content-section" id="video">
-      <h3>Vídeo Educativo</h3>
-      <p>Assista a um vídeo sobre práticas sustentáveis. Você pode substituir o arquivo ou o link pelo vídeo que preferir.</p>
-
-      <!-- Responsive video wrapper -->
-      <div class="video-wrapper">
-        <video controls playsinline preload="metadata" poster="assets/poster.jpg">
-          <source src="assets/video.mp4" type="video/mp4" />
-          <track kind="captions" src="assets/video.vtt" srclang="pt" label="Português">
-          Seu navegador não suporta vídeo incorporado. Você também pode assistir no <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>.
-        </video>
-        <div class="no-video">Se não houver vídeo local, use o iframe do YouTube abaixo:</div>
-      </div>
-
-      <!-- Optional iframe fallback (uncomment and set ID if you prefer YouTube) -->
-      <!--
-      <div class="video-embed" aria-hidden="false">
-        <iframe src="https://www.youtube.com/embed/INSIRA_ID_AQUI" title="Vídeo educativo" frameborder="0" allowfullscreen></iframe>
-      </div>
-      -->
-
-    </section>
-
-    <section class="container content-section" id="quiz" aria-labelledby="quiz-title">
-      <h3 id="quiz-title">Quiz Interativo</h3>
-      <p>Teste seus conhecimentos sobre agricultura sustentável.</p>
-      <div id="quiz-container" class="quiz">
-        <div id="question-area" class="question-area" aria-live="polite">Habilite JavaScript para jogar o quiz interativo.</div>
-        <ul id="answers" class="answers" role="list"></ul>
-        <div class="quiz-controls">
-          <button id="next-btn" class="btn" disabled>Próxima</button>
-          <button id="restart-btn" class="btn secondary" hidden>Reiniciar</button>
-        </div>
-        <div id="result" class="quiz-result" aria-live="polite"></div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>Agro Forte</strong><br />
-        Futuro Sustentável — equilíbrio entre produção e meio ambiente.
-      </div>
-      <div>
-        Créditos: Conteúdo e layout por <span class="credit">Equipe Agro Forte</span>. Imagens e vídeos: substitua por suas mídias ou fontes licenciadas.
-      </div>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <h2>Agro Forte, Futuro Sustentável</h2>
+      <p>Equilíbrio entre produção e meio ambiente — práticas que garantem alimentos, renda e conservação.</p>
     </div>
-  </footer>
+  </section>
 
-  <script src="script.js" defer></script>
+  <!-- SUSTENTABILIDADE -->
+  <section class="container content-section" id="sobre">
+    <h3>Agricultura Sustentável</h3>
+
+    <img src="assets/sustentabilidade.jpg" alt="Agricultura sustentável" class="section-img" />
+
+    <p>
+      A agricultura sustentável integra técnicas de produção que mantém a produtividade ao mesmo tempo
+      em que conserva solo, água e biodiversidade.
+    </p>
+
+    <ul>
+      <li>Conservação do solo</li>
+      <li>Gestão eficiente de água</li>
+      <li>Rotação e diversificação de culturas</li>
+      <li>Produção com baixo impacto químico</li>
+    </ul>
+  </section>
+
+  <!-- TECNOLOGIAS -->
+  <section class="container content-section" id="tecnologias">
+    <h3>Tecnologias Agrícolas</h3>
+
+    <img src="assets/tecnologias.jpg" alt="Tecnologias agrícolas" class="section-img" />
+
+    <div class="grid">
+      <article>
+        <h4>Precision Farming</h4>
+        <p>Sensoriamento e GPS para otimizar produção.</p>
+      </article>
+
+      <article>
+        <h4>Drones</h4>
+        <p>Monitoramento e análise das plantações.</p>
+      </article>
+
+      <article>
+        <h4>Biotecnologia</h4>
+        <p>Plantas mais resistentes e sustentáveis.</p>
+      </article>
+
+      <article>
+        <h4>Agroecologia</h4>
+        <p>Sistemas naturais e regenerativos.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PRESERVAÇÃO -->
+  <section class="container content-section" id="preservacao">
+    <h3>Preservação Ambiental</h3>
+
+    <img src="assets/sustentabilidade.jpg" alt="Preservação ambiental" class="section-img" />
+
+    <p>
+      Preservar o meio ambiente garante o equilíbrio dos ecossistemas e o futuro da produção agrícola.
+    </p>
+
+    <ol>
+      <li>Restauração de matas ciliares</li>
+      <li>Proteção de nascentes</li>
+      <li>Conservação da biodiversidade</li>
+    </ol>
+  </section>
+
+  <!-- GRÁFICOS -->
+  <section class="container content-section" id="graficos">
+    <h3>Gráficos</h3>
+
+    <canvas id="chart1"></canvas>
+    <canvas id="chart2"></canvas>
+  </section>
+
+  <!-- VÍDEO -->
+  <section class="container content-section" id="video">
+    <h3>Vídeo Educativo</h3>
+
+    <div class="video-wrapper">
+      <video controls poster="assets/poster.jpg">
+        <source src="assets/video.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="container content-section" id="quiz">
+    <h3>Quiz Interativo</h3>
+    <div id="quiz-container"></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <strong>Agro Forte</strong><br />
+    Futuro Sustentável
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
+
 </body>
         </html>
